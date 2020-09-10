@@ -1,0 +1,32 @@
+
+
+cd /etc/apache2
+apache2ctl configtest
+
+vi /etc/apache2/sites-enabled/yoursite.conf
+
+Re-install apache2
+
+sudo apt-get install apache2
+
+
+And start your server
+sudo service apache2 start
+
+
+First uninstall apache2
+
+sudo apt-get purge apache2
+sudo apt-get purge apache2-common 
+sudo apt-get purge apache* # this will remove completely
+
+sudo apt-get update
+
+Next install fresh apache2
+
+sudo apt-get install apache2 
+
+Next Check for the apache2 status
+
+systemctl status apache2
+
